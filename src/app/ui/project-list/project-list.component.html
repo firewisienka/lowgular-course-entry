@@ -1,2 +1,12 @@
-<h2>lista</h2>
-ffff
+<h2>Projekty</h2>
+
+<div *ngFor="let project of data$|async">
+  {{project.id}}
+  <br>
+  {{project.name}}
+  <br>
+  {{project.owner}}
+  <br>
+  {{project.description}}
+</div>
+
