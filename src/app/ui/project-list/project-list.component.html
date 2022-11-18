@@ -1,12 +1,21 @@
-<h2>Projekty</h2>
+<h2>Lista projektów</h2>
 
 <div *ngFor="let project of data$|async">
-  {{project.id}}
-  <br>
-  {{project.name}}
-  <br>
-  {{project.owner}}
-  <br>
-  {{project.description}}
+
+  <table style="border:none; table-layout:fixed; width:70%;">
+    <tr>
+      <td style="border:none; border-right:3px dashed blue;">
+        {{project.id}}
+      </td>
+      <td style="border:none; border-right:3px dashed blue;">
+        {{project.owner}}
+      </td>
+      <td style="border:none; border-right:none;">
+       <b> {{project.name}}</b>
+        <br>
+        {{project.description}}
+      </td>
+    </tr>
+  </table>
 </div>
 
