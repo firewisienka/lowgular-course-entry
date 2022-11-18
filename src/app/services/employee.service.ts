@@ -9,6 +9,6 @@ export class EmployeeService {
   }
 
   getAll(): Observable<PersonModel[]> {
-    return this._httpClient.get<PersonModel[]>('assets/data/employees.json')
+    return this._httpClient.get<PersonModel[]>('assets/data/people.json')
   }
 }
